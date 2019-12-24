@@ -1,0 +1,49 @@
+{
+  "routes": [
+    {
+      "src": "/api/author",
+      "methods": ["GET"],
+      "dest": "/api/author/get_authors.js"
+    },
+    {
+      "src": "/api/author",
+      "methods": ["POST"],
+      "dest": "/api/author/create_author.js"
+    },
+    {
+      "src": "/api/author/(.*)",
+      "methods": ["PUT"],
+      "dest": "/api/author/update_author.js?id=$1"
+    },
+    {
+      "src": "/api/author/(.*)",
+      "methods": ["GET"],
+      "dest": "/api/author/get_author.js?id=$1"
+    },
+    {
+      "src": "/api/book",
+      "methods": ["GET"],
+      "dest": "/api/book/get_books.js"
+    },
+    {
+      "src": "/api/book",
+      "methods": ["POST"],
+      "dest": "/api/book/create_book.js"
+    },
+    {
+      "src": "/api/book/(.*)",
+      "methods": ["PUT"],
+      "dest": "/api/book/update_book.js?id=$1"
+    },
+    {
+      "src": "/api/book/(.*)",
+      "methods": ["GET"],
+      "dest": "/api/book/get_book.js?id=$1"
+    },
+    {
+      "src": "/api/book/(.*)",
+      "methods": ["DELETE"],
+      "dest": "/api/book/delete_book.js?id=$1"
+    }
+  ]
+}

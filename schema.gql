@@ -1,0 +1,23 @@
+type Author {
+  name: String!
+  country: String!
+  books: [Book!] @relation
+}
+
+type Book {
+  title: String!
+  description: String!
+  quantity: Int
+  author: Author!
+  price: Int
+}
+
+type User {
+  email: String! @unique
+  password: String!
+}
+
+type Query {
+  allAuthors: [Author!]
+  allBooks: [Book!]
+}
