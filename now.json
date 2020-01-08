@@ -1,8 +1,7 @@
 {
   "env": {
     "FAUNADB_SECRET_KEY": "@faunadb_secret_key",
-    "FAUNADB_API": "@faunadb_api",
-    "API_URL": "@apiurl"
+    "FAUNADB_API": "@faunadb_api"
   },
   "builds": [
     {
@@ -15,6 +14,11 @@
       "use": "@now/node"
     }
   ],
+  "build": {
+    "env": {
+      "API_URL": "@apiurl"
+    }
+  },
   "routes": [
     {
       "src": "/api/author",
