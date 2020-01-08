@@ -1,4 +1,4 @@
-const { client } = require('../_utils.js')
+const { client } = require('../_utils')
 
 const authorQueries = require('./_author.queries')
 
