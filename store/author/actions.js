@@ -7,7 +7,12 @@ import {
 
 export default {
   async getAllAuthors({ commit }) {
+    console.log(this.$axios.defaults)
     const { data } = await this.$axios.get('/api/author')
     commit(SET_ALL_AUTHORS, data)
   },
+  async getAuthorById({ commit }, { id }) {
+    const { data } = await this.$axios.get(`/api/author/${id}`)
+    commit(SET_AUTHOR, data)
+  }
 }

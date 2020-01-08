@@ -21,6 +21,7 @@
     "nuxt": "^2.11.0"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/tailwindcss": "^1.2.0"
   }
 }

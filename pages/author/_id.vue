@@ -3,7 +3,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "EditAuthor",
+  async fetch({ store, params: { id } }) {
+    store.dispatch("author/getAuthorById", { id });
+  }
+};
 </script>
-
-<style lang="scss" scoped></style>
