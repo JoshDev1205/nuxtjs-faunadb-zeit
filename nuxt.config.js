@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 export default {
   mode: 'universal',
   /*
@@ -16,9 +14,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Gelasio&display=swap' }
     ]
-  },
-  env: {
-    baseUrl: process.env.BASE_URL
   },
   /*
   ** Customize the progress-bar color
@@ -39,7 +34,6 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js modules
@@ -48,7 +42,7 @@ export default {
     '@nuxtjs/axios'
   ],
   axios: {
-    baseUrl: process.env.API_URL || 'http://localhost:8080'
+    baseURL: process.env.API_URL || 'http://localhost:3000'
   },
   /*
   ** Build configuration
