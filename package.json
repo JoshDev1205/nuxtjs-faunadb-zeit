@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "engines": {
+    "node": "10.x"
+  },
   "license": "ISC",
   "dependencies": {
-    "graphql-request": "^1.8.2"
+    "@nuxtjs/axios": "^5.9.0",
+    "graphql-request": "^1.8.2",
+    "nuxt": "^2.11.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.2.0"
   }
 }
