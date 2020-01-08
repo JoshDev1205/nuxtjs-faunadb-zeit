@@ -10,7 +10,7 @@
       "config": {}
     },
     {
-      "src": "api/**/[^_]*.js",
+      "src": "api/[^_]*/[^_]*.js",
       "use": "@now/node"
     }
   ],
