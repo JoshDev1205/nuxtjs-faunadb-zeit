@@ -7,8 +7,7 @@ import {
 
 export default {
   async getAllAuthors({ commit }) {
-    const res = await fetch('/api/author')
-    const data = await res.json()
+    const { data } = await this.$axios.get('/api/author')
     commit(SET_ALL_AUTHORS, data)
   },
 }

@@ -41,6 +41,9 @@ export default {
   modules: [
     '@nuxtjs/axios'
   ],
+  axios: {
+    baseURL: process.env.API_URL || '/'
+  },
   /*
   ** Build configuration
   */
