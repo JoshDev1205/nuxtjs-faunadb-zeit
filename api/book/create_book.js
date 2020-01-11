@@ -8,9 +8,9 @@ module.exports = async (req, res) => {
   const variables = {
     title,
     description,
-    quantity,
+    quantity: parseInt(quantity),
     authorId,
-    price
+    price: parseInt(price)
   }
 
   const { createBook } = await client.request(bookQueries.createBook, variables)

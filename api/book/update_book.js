@@ -10,9 +10,9 @@ module.exports = async (req, res) => {
     id,
     title,
     description,
-    quantity,
+    quantity: parseInt(quantity),
     authorId,
-    price
+    price: parseInt(price)
   }
 
   const { updateBook } = await client.request(bookQueries.updateBook, variables)

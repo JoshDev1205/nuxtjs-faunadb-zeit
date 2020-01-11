@@ -1,6 +1,5 @@
 import {
   CREATE_AUTHOR,
-  SET_AUTHOR,
   SET_ALL_AUTHORS,
   UPDATE_AUTHOR
 } from '~/constants/author/mutations-types'
@@ -11,9 +10,6 @@ export default {
   },
   [SET_ALL_AUTHORS](state, payload) {
     state.authors = payload
-  },
-  [SET_AUTHOR](state, payload) {
-    state.author = payload
   },
   [UPDATE_AUTHOR](state, payload) {
     const { authors } = state

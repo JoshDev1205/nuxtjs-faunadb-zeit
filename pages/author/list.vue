@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="text-2xl mb-4 text-blue-500 text-center">Author's List</h1>
+    <h1 class="text-2xl mb-4 text-blue-500 text-center font-bold">
+      List of Authors
+    </h1>
     <table class="w-full text-md bg-white shadow-md rounded">
       <thead>
         <tr class="border-b">

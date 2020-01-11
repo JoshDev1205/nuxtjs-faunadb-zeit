@@ -1,0 +1,5 @@
+export const SET_ALL_BOOKS = 'book/SET_ALL_BOOKS'
+export const SET_BOOK = 'book/SET_BOOK'
+export const UPDATE_BOOK = 'book/UPDATE_BOOK'
+export const CREATE_BOOK = 'book/CREATE_BOOK'
+export const DELETE_BOOK = 'book/DELETE_BOOK'

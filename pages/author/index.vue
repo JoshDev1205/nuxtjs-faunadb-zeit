@@ -10,7 +10,7 @@
       <nuxt-link
         class="bg-transparent text-indigo-500 font-semibold py-2 px-4 border border-indigo-500 rounded"
         to="/author/list"
-        >List Author</nuxt-link
+        >List Authors</nuxt-link
       >
     </div>
   </div>
