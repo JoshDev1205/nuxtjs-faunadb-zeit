@@ -18,7 +18,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.9.0",
     "graphql-request": "^1.8.2",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
